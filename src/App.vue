@@ -8,11 +8,11 @@
         <p>Tarix: {{ date }}</p>
       </div>
       <div class="nav-wrapper">
-        <router-link to="/">Ana Səhifə</router-link>
-        <router-link to="/about">Haqqimizda</router-link>
-        <router-link to="/contact">Xidmetler</router-link>
-        <router-link to="/products">Mehsullar</router-link>
-        <router-link to="/gallery">Mehsullar</router-link>
+        <router-link to="/">ANA SƏHİFƏ</router-link>
+        <router-link to="/about">HAQQIMIZDA</router-link>
+        <router-link to="/contact">ƏLAQƏ</router-link>
+        <router-link to="/products">MƏHSULLAR</router-link>
+        <router-link to="/gallery">QALAREYA</router-link>
       </div>
       <div class="view-wrapper">
         <router-view></router-view>
@@ -46,15 +46,21 @@ export default {
   margin: 0;
   padding: 0;
 }
-body {
+body{
+  width: 100vw;
+  height: 100vh;
   background-color: bisque;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.2rem;
 }
+#app{
+  height: 100%;
+}
 .grid-container {
-  background-color: rgb(54, 150, 103);
+  background-color: rgb(51, 117, 84);
   width: 100vw;
-  height: 100vh;
+  height: 100%;
+  /* min-height: 100vh; */
   display: grid;
   gap: 10px;
   grid-template-columns: 0.2fr 0.8fr;
@@ -70,7 +76,7 @@ body {
 }
 #header {
   padding: 2px 8px;
-  background-color: #000;
+  background-color: #222;
   justify-self: stretch;
   align-self: stretch;
   display: flex;
@@ -99,7 +105,7 @@ body {
 
 .nav-wrapper {
   grid-area: nav;
-  background-color: black;
+  background-color: #222;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -109,28 +115,36 @@ body {
 
 .nav-wrapper a {
   color: #ddd;
-  width: 65%;
+  width: 70%;
   margin: 5px 0px;
-  padding: 6px 16px;
+  padding: 12px 16px;
   align-self: center;
   text-align: center;
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   text-decoration: none;
-  border: 2px solid rgb(80, 218, 133);
-  border-radius: 8px;
+  border-bottom: 2px solid rgb(0, 128, 85);
+  /* border-right: 3px solid rgb(0, 128, 85); */
+  /* border-left:  3px solid rgb(0, 128, 85); */
 }
 .nav-wrapper a:link,
 a:visited {
+  background-color: #111;
   color: #ddd;
-  background-color: #000;
 }
 .nav-wrapper a:hover,
 a:active {
-  color: mediumseagreen;
+  color: #bbb;
 }
 
 .view-wrapper {
+  color: #ccc;
   grid-area: content;
+  padding: 8px;
+  background-color: #222;
+  margin: 10px 10px 10px 0px;
+}
+.view-wrapper h1 {
+  color: #eee;
 }
 
 h1 {

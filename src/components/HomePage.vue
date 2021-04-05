@@ -43,7 +43,5 @@
    .page-wrapper {
      padding: 10px 18px;
    }
-   .page-wrapper h1 {
-     color: #333;
-   }
+
 </style>
