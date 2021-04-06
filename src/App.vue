@@ -1,27 +1,30 @@
 
 <template>
-    <div class="grid-container">
-      <div id="header">
-        <img class="logo" src="./assets/texlogo.png" />
-        <h1>Texnokom MMC</h1>
-        <p>E-Mail: info@texnokom.az</p>
-        <p>Tarix: {{ date }}</p>
-      </div>
-      <div class="nav-wrapper">
-        <router-link to="/">ANA SƏHİFƏ</router-link>
-        <router-link to="/about">HAQQIMIZDA</router-link>
-        <router-link to="/contact">ƏLAQƏ</router-link>
-        <router-link to="/products">MƏHSULLAR</router-link>
-        <router-link to="/gallery">QALAREYA</router-link>
-      </div>
-      <div class="view-wrapper">
-        <router-view></router-view>
-      </div>
+  <div class="grid-container">
+    <div id="header">
+      <img class="logo" src="./assets/texlogo.png" />
+      <h1>Texnokom MMC</h1>
+      <p>E-Mail: info@texnokom.az</p>
+      <p>Tarix: {{ date }}</p>
     </div>
+    <div class="nav-wrapper">
+      <router-link to="/">ANA SƏHİFƏ</router-link>
+      <router-link to="/about">HAQQIMIZDA</router-link>
+      <router-link to="/contact">ƏLAQƏ</router-link>
+      <router-link to="/products">MƏHSULLAR</router-link>
+      <router-link to="/gallery">QALAREYA</router-link>
+      <router-link to="/partners">PARTNYORLAR</router-link>
+      <router-link to="/services">XİDMƏTLƏR</router-link>
+    </div>
+    <div class="view-wrapper">
+      <router-view></router-view>
+    </div>
+  </div>
 </template>
 
 
 <script>
+document.addEventListener("contextmenu", (event) => event.preventDefault());
 export default {
   data: function () {
     return {
@@ -46,14 +49,14 @@ export default {
   margin: 0;
   padding: 0;
 }
-body{
+body {
   width: 100vw;
   height: 100vh;
   background-color: bisque;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.2rem;
 }
-#app{
+#app {
   height: 100%;
 }
 .grid-container {
@@ -63,7 +66,7 @@ body{
   /* min-height: 100vh; */
   display: grid;
   gap: 10px;
-  grid-template-columns: 0.2fr 0.8fr;
+  grid-template-columns: 2fr 8fr;
   grid-template-rows: 3fr 7fr;
   grid-template-areas:
     "logo content"
