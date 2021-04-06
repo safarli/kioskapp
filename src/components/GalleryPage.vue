@@ -1,15 +1,20 @@
 <template>
   <div class="main-wrapper">
-    <h1>Qalareya Sehifesi</h1>
+    <div>
+      <h1>Qalareya</h1>
+      <br />
+      <hr />
+    </div>
     <p>
       Bacon ipsum dolor amet cupim buffalo shoulder corned beef. Ball tip t-bone
-      brisket salami pork chopken tri-tip venison sirloin filet mignon landjaeger.
-      Andouille t-bone chickensa salami, burgdoggen porchetta meatball bacon strip
+      brisket salami pork chopken tri-tip venison sirloin filet mignon
+      landjaeger. Andouille t-bone chickensa salami, burgdoggen porchetta
+      meatball bacon strip
     </p>
     <div class="img-wrapper">
       <img src="../assets/imgs/1.jpg" alt="" />
       <img src="../assets/imgs/2.jpg" alt="" />
-      <img src="../assets/imgs/1.jpg" alt="" />
+      <img src="../assets/imgs/3.jpg" alt="" />
     </div>
   </div>
 </template>
@@ -30,7 +35,6 @@ export default {
   grid-template-rows: 100px 200px 1fr;
 }
 .img-wrapper {
-  justify-self: center;
   overflow: hidden;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -38,7 +42,9 @@ export default {
   gap: 10px;
 }
 .img-wrapper img {
+  margin: 17px;
   width: 400px;
   object-fit: contain;
+  box-shadow: 0px 0px 14px #000;
 }
 </style>

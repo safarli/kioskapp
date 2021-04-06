@@ -1,6 +1,6 @@
 <template>
   <div class="page-wrapper">
-    <h1>Home Page</h1>
+    <h1>Ana Səhifə</h1>
     <br>
     <hr>
     <br>

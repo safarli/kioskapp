@@ -1,3 +1,6 @@
 <template>
-    <h1>XİDMƏTLƏR</h1>
+    <h1>Xidmətlər</h1>
+    <br>
+    <hr>
+    <br>
 </template>

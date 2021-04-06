@@ -1,5 +1,8 @@
 <template>
-  <h1>Mehsullar Sehifesi</h1>
+  <h1>Məhsullar</h1>
+  <br>
+  <hr>
+  <br>
   <p>
     Bacon ipsum dolor amet frankfurter short loin tri-tip alcatra. Alcatra beef
     ribs turducken tenderloin filet mignon hamburger sausage shank ham hock pork

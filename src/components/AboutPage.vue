@@ -1,5 +1,8 @@
 <template>
-  <h1>Haqqimizda Sehifesi</h1>
+  <h1>Haqqımızda</h1>
+  <br>
+  <hr>
+  <br>
   <p>
     2010-ci ildə əsası qoyulmuş “Texnokom” MMC çoxşaxəli İT xidmətlərini bir
     ünvanda birləşdirməklə müştərilərə unikal xidmət təqdim edən aparıcı

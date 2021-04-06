@@ -24,7 +24,7 @@
 
 
 <script>
-document.addEventListener("contextmenu", (event) => event.preventDefault());
+// document.addEventListener("contextmenu", (event) => event.preventDefault());
 export default {
   data: function () {
     return {
