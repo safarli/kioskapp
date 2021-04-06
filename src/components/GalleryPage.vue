@@ -30,21 +30,20 @@ export default {
 
 <style scoped>
 .main-wrapper {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 100px 200px 1fr;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .img-wrapper {
-  overflow: hidden;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-auto-rows: 1fr;
-  gap: 10px;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  /* justify-content: center; */
 }
 .img-wrapper img {
-  margin: 17px;
-  width: 400px;
-  object-fit: contain;
+  width: 40%;
+  /* object-fit: contain; */
   box-shadow: 0px 0px 14px #000;
 }
 </style>

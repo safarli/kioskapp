@@ -66,7 +66,7 @@ body {
   /* min-height: 100vh; */
   display: grid;
   gap: 10px;
-  grid-template-columns: 2fr 8fr;
+  grid-template-columns: 1fr 4fr;
   grid-template-rows: 3fr 7fr;
   grid-template-areas:
     "logo content"

@@ -5,7 +5,7 @@
   <br />
   <p></p>
   <ul >
-    <li v-for="partner in partners_list[0]" :key="partner">{{ partner }}</li>
+    <li v-for="partner in partners_list[0]" :key="partner">{{ partner + ')' }}</li>
   </ul>
 </template>
 
@@ -41,3 +41,9 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+  ul {
+    list-style-position: inside;
+  }
+</style>
