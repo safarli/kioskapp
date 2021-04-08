@@ -30,19 +30,18 @@ export default {
 
 <style scoped>
 .main-wrapper {
-  width: 100%;
+  width: 600px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 .img-wrapper {
-  width: 80%;
   display: flex;
   flex-direction: row;
-  /* justify-content: center; */
+  flex-flow: row wrap;
 }
 .img-wrapper img {
-  width: 40%;
+  max-width: 70%;
   /* object-fit: contain; */
   box-shadow: 0px 0px 14px #000;
 }

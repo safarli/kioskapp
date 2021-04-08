@@ -53,7 +53,7 @@ body {
   width: 100vw;
   height: 100vh;
   background-color: bisque;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Rubik', sans-serif;
   font-size: 1.2rem;
 }
 #app {
